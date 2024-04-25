@@ -5,7 +5,8 @@ const Stopwatch=()=>{
 
 
     const [isRunning, setRunning] = useState(false);
-    cosnt [elapsedTime, setElapsedTime] = useState(0);
+    const [elapsedTime, setElapsedTime] = useState(0);
+    const intervalIdRef = useRef(0);
     return(
         <div>
 
